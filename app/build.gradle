@@ -1,0 +1,86 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.devbyph37030.money_manager_project'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.devbyph37030.money_manager_project"
+        minSdk 31
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        exclude "META-INF/DEPENDENCIES"
+    }
+}
+
+
+
+    dependencies {
+        implementation libs.appcompat
+        implementation libs.material.v190
+        implementation libs.constraintlayout
+//        implementation 'com.google.android.gms:play-services-ads-lite:23.2.0'
+        implementation 'com.google.android.gms:play-services-tasks:18.0.2'
+        implementation 'androidx.sqlite:sqlite:2.3.1'
+        implementation 'com.google.android.gms:play-services-measurement-api:21.2.2'
+        implementation libs.constraintlayout.core
+        implementation 'com.google.android.gms:play-services-auth:20.5.0'
+        implementation 'com.android.billingclient:billing:6.0.0'
+        implementation 'androidx.exifinterface:exifinterface:1.3.6'
+        implementation libs.lifecycle.process
+        implementation libs.core.splashscreen
+        testImplementation libs.junit
+        androidTestImplementation libs.junit.v115
+        androidTestImplementation libs.espresso.core.v351
+        implementation libs.mpandroidchart
+        implementation libs.picasso
+        implementation libs.commons.lang3
+        implementation libs.circleprogress
+        implementation libs.opencsv
+        implementation 'org.apache.httpcomponents:httpcore:4.4.15'
+        implementation libs.google.http.client
+        implementation libs.google.api.services.drive
+        implementation "androidx.room:room-guava:2.5.1"
+        implementation libs.google.http.client.android
+        implementation libs.google.api.client.android
+        implementation libs.google.http.client.gson
+        implementation libs.evalex
+        implementation libs.fancyshowcaseview
+        implementation libs.autofittextview
+        implementation(libs.poi.ooxml) { exclude group: 'org.apache.xmlbeans', module: 'xmlbeans' }
+        implementation libs.xmlbeans
+        implementation libs.photoview
+        implementation libs.lottie
+        implementation libs.glide
+        constraints {
+            implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0") {
+                because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
+            }
+            implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0") {
+                because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
+            }
+        }
+    }
+
