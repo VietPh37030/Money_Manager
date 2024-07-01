@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="splashScreenIconSize" format="dimension" />
+    <attr name="postSplashScreenTheme" format="reference" />
+    <attr name="windowSplashScreenAnimatedIcon" format="reference" />
+    <attr name="windowSplashScreenAnimationDuration" format="integer" />
+    <attr name="windowSplashScreenBackground" format="color" />
+    <attr name="bottomNavigation" format="reference" />
+    <attr name="bottomNavigationActive" format="reference" />
+    <attr name="bottomNavigationInactive" format="reference" />
+    <attr name="buttonDisabled" format="color" />
+    <attr name="editTextBorder" format="reference" />
+    <attr name="editTextCaret" format="reference" />
+    <attr name="emptyArchive" format="reference" />
+    <attr name="emptyBackground" format="reference" />
+    <attr name="emptyBudget" format="reference" />
+    <attr name="emptyCategory" format="reference" />
+    <attr name="emptyCurrency" format="reference" />
+    <attr name="emptyDebt" format="reference" />
+    <attr name="emptyGoal" format="reference" />
+    <attr name="emptyRecord" format="reference" />
+    <attr name="emptyRecurring" format="reference" />
+    <attr name="emptySearch" format="reference" />
+    <attr name="emptyTransaction" format="reference" />
+    <attr name="floatingButton" format="reference" />
+    <attr name="markerFill" format="reference" />
+    <attr name="markerStroke" format="reference" />
+    <attr name="primaryBackground" format="reference" />
+    <attr name="primaryDarkAlphaTextColor" format="reference" />
+    <attr name="primaryDarkTextColor" format="reference" />
+    <attr name="primaryTextColor" format="reference" />
+    <attr name="progressBar" format="reference" />
+    <attr name="secondaryBackground" format="reference" />
+    <attr name="secondaryDialogBackground" format="reference" />
+    <attr name="secondaryTextColor" format="reference" />
+    <attr name="seperator" format="reference" />
+    <attr name="uncheckBackground" format="reference" />
+    <attr name="untitledTextColor" format="reference" />
+    <attr name="primaryDialogBackground" format="reference" />
+</resources>

@@ -1,9 +1,145 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Money_Manager_Project" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="bottomNavigation">@color/bottomNavigation</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="bottomNavigationActive">@color/bottomNavigationActive</item>
+        <item name="bottomNavigationInactive">@color/bottomNavigationInactive</item>
+        <item name="buttonDisabled">@color/buttonDisable</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="divider">@color/divider</item>
+        <item name="editTextBorder">@color/editTextBorder</item>
+        <item name="editTextCaret">@drawable/caret</item>
+        <item name="emptyArchive">@drawable/empty_archive</item>
+        <item name="emptyBackground">@color/backgroundEmpty</item>
+        <item name="emptyBudget">@drawable/empty_budget</item>
+        <item name="emptyCategory">@drawable/empty_category</item>
+        <item name="emptyCurrency">@drawable/empty_currency</item>
+        <item name="emptyDebt">@drawable/empty_debt</item>
+        <item name="emptyGoal">@drawable/empty_goal</item>
+        <item name="emptyRecord">@drawable/empty_record</item>
+        <item name="emptyRecurring">@drawable/empty_recurring</item>
+        <item name="emptySearch">@drawable/empty_search</item>
+        <item name="emptyTransaction">@drawable/empty_transaction</item>
+        <item name="floatingButton">@color/floatingButton</item>
+        <item name="markerFill">@color/markerFill</item>
+        <item name="markerStroke">@color/markerStroke</item>
+        <item name="primaryBackground">@color/backgroundPrimary</item>
+        <item name="primaryDarkAlphaTextColor">@color/textColorPrimaryDarkAlpha</item>
+        <item name="primaryDarkTextColor">@color/textColorPrimaryDark</item>
+        <item name="primaryTextColor">@color/textColorPrimary</item>
+        <item name="progressBar">@color/progressBar</item>
+        <item name="secondaryBackground">@color/backgroundSecondary</item>
+        <item name="secondaryDialogBackground">@color/backgroundSecondaryDialog</item>
+        <item name="secondaryTextColor">@color/textColorSecondary</item>
+        <item name="seperator">@color/separator</item>
+        <item name="uncheckBackground">@drawable/background_box_uncheck</item>
+        <item name="untitledTextColor">@color/textColorUntitled</item>
     </style>
 
-    <style name="Theme.Money_Manager_Project" parent="Base.Theme.Money_Manager_Project" />
+    <style name="AppThemeNight" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="bottomNavigation">@color/bottomNavigationNight</item>
+        <item name="bottomNavigationActive">@color/bottomNavigationActiveNight</item>
+        <item name="bottomNavigationInactive">@color/bottomNavigationInactiveNight</item>
+        <item name="buttonDisabled">@color/buttonDisableNight</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="divider">@color/dividerNight</item>
+        <item name="editTextBorder">@color/editTextBorderNight</item>
+        <item name="editTextCaret">@drawable/caret_white</item>
+        <item name="emptyArchive">@drawable/empty_archive_night</item>
+        <item name="emptyBackground">@color/backgroundEmptyNight</item>
+        <item name="emptyBudget">@drawable/empty_budget_night</item>
+        <item name="emptyCategory">@drawable/empty_category_night</item>
+        <item name="emptyCurrency">@drawable/empty_currency_night</item>
+        <item name="emptyDebt">@drawable/empty_debt_night</item>
+        <item name="emptyGoal">@drawable/empty_goal_night</item>
+        <item name="emptyRecord">@drawable/empty_record_night</item>
+        <item name="emptyRecurring">@drawable/empty_recurring_night</item>
+        <item name="emptySearch">@drawable/empty_search_night</item>
+        <item name="emptyTransaction">@drawable/empty_transaction_night</item>
+        <item name="floatingButton">@color/floatingButtonNight</item>
+        <item name="markerFill">@color/markerFillNight</item>
+        <item name="markerStroke">@color/markerStrokeNight</item>
+        <item name="primaryBackground">@color/backgroundPrimaryNight</item>
+        <item name="primaryDarkAlphaTextColor">@color/textColorPrimaryDarkAlphaNight</item>
+        <item name="primaryDarkTextColor">@color/textColorPrimaryDarkNight</item>
+        <item name="primaryTextColor">@color/textColorPrimaryNight</item>
+        <item name="progressBar">@color/progressBarNight</item>
+        <item name="secondaryBackground">@color/backgroundSecondaryNight</item>
+        <item name="secondaryDialogBackground">@color/backgroundSecondaryDialogNight</item>
+        <item name="secondaryTextColor">@color/textColorSecondaryNight</item>
+        <item name="seperator">@color/separatorNight</item>
+        <item name="uncheckBackground">@drawable/background_box_uncheck_night</item>
+        <item name="untitledTextColor">@color/textColorUntitledNight</item>
+    </style>
+
+    <style name="Theme.Splash" parent="@style/Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="windowSplashScreenBackground">#ffffff</item>
+    </style>
+
+    <style name="Theme.SplashScreen" parent="@style/Theme.SplashScreen.Common" tools:ignore="ResourceCycle">
+        <item name="postSplashScreenTheme">?android:attr/theme</item>
+        <item name="windowSplashScreenAnimatedIcon">@android:drawable/sym_def_app_icon</item>
+        <item name="windowSplashScreenAnimationDuration">@integer/default_icon_animation_duration
+        </item>
+        <item name="windowSplashScreenBackground">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="Theme.SplashScreen.Common" parent="@style/Base.Theme.SplashScreen.DayNight">
+        <item name="android:windowBackground">@drawable/compat_splash_screen_no_icon_background
+        </item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:opacity">opaque</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="splashScreenIconSize">@dimen/splashscreen_icon_size_no_background</item>
+    </style>
+
+    <style name="Base.Theme.SplashScreen.DayNight" parent="@style/Base.Theme.SplashScreen.Light" />
+
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.v21.Theme.SplashScreen.Light" />
+
+    <style name="Base.v21.Theme.SplashScreen.Light" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar" />
+
+    <style name="Theme.Rating.Dialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/ratingColor</item>
+    </style>
+
+    <style name="Theme.Floating.Night" parent="@style/Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="primaryDialogBackground">@color/backgroundPrimaryDialogNight</item>
+        <item name="primaryTextColor">@color/textColorPrimaryNight</item>
+        <item name="secondaryDialogBackground">@color/backgroundSecondaryDialogNight</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Floating" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="primaryDialogBackground">@color/backgroundPrimaryDialog</item>
+        <item name="primaryTextColor">@color/textColorPrimary</item>
+        <item name="secondaryDialogBackground">@color/backgroundSecondaryDialog</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>
