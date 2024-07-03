@@ -51,6 +51,7 @@ android {
         implementation 'androidx.exifinterface:exifinterface:1.3.6'
         implementation libs.lifecycle.process
         implementation libs.core.splashscreen
+        implementation libs.activity
         testImplementation libs.junit
         androidTestImplementation libs.junit.v115
         androidTestImplementation libs.espresso.core.v351

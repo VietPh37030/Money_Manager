@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.New_SplashScreen">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/anim" />
+<ImageView
+    android:id="@+id/a"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:src="@drawable/widget_logo"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quản lý thu chi"
+        android:textColor="#000"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:layout_below="@+id/a"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/roboto_bold"
+
+        />
+</RelativeLayout>
